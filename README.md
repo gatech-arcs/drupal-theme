@@ -29,4 +29,3 @@ On the theme settings page, configure:
 [![Coding Style: Drupal](https://flat.badgen.net/badge/code%20style/Drupal/f2a)](https://www.drupal.org/docs/develop/standards/php/php-coding-standards)
 [![GitHub Super-Linter](https://github.com/konfuzed/gtcos_drupal_theme/workflows/Lint%20Code%20Base/badge.svg)](https://github.com/marketplace/actions/super-linter)
 ![Dependabot Status](https://flat.badgen.net/github/dependabot/ubuntu/yaru)
-
