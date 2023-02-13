@@ -4,7 +4,7 @@
 
 Stripping down the [GT theme](https://github.gatech.edu/ICWebTeam/gt_theme) to work as is, pending component based swaps
 
-`gt_theme` is the official Georgia Tech theme (https://theme.gatech.edu) for the Drupal 9+ content management system.
+`gt_theme` is the official [Georgia Tech theme](https://theme.gatech.edu) for the Drupal 9+ content management system.
 
 The GT CoS theme Drupal ^9.4.0 and above, including ^10+
 
@@ -12,7 +12,7 @@ The GT CoS theme Drupal ^9.4.0 and above, including ^10+
 
 
 ## GT theme
-The **GT theme contains the most up-to-date Georgia Tech design elements and allows for full page customizations. [The Georgia Tech Theme website](http://theme.gatech.edu/) contains documentation and training videos.
+The **GT theme contains the most up-to-date Georgia Tech design elements and allows for full page customizations. [The Georgia Tech Theme site](http://theme.gatech.edu/) contains documentation and training videos.
 
 ### Configuration
 As an administrative user, navigate to *'Appearance - GT - Settings* (also located from admin/appearance/settings/gt ).
