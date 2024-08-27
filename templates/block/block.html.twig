@@ -25,18 +25,22 @@
  * @see template_preprocess_block()
  */
 #}
-{# Attach the library. #}
-{{ attach_library('gt/image-gallery') }}
+{%
+    set classes = [
+    'block',
+    'block-' ~ configuration.provider|clean_class
+]
+%}
 
-{# Content #}
-  <section class="gallery-block cards-gallery">
-    <div class="container">
-      <div class="row">
-            {{ content }}
-      </div>
-    </div>
-  </section>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>
-<script>
-  baguetteBox.run('.cards-gallery', { animation: 'slideIn'});
-</script>
+{% set classes = classes | merge(plugin_id|split(":")) %}
+
+<div{{ attributes.addClass(classes) }}>
+    {{ title_prefix }}
+    {% if label %}
+        <h2{{ title_attributes }}>{{ label }}</h2>
+    {% endif %}
+    {{ title_suffix }}
+    {% block content %}
+        {{ content }}
+    {% endblock %}
+</div>

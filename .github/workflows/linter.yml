@@ -39,7 +39,7 @@ jobs:
       # Checkout the code base #
       ##########################
       - name: Checkout Code
-        uses: actions/checkout@main
+        uses: actions/checkout@v4.1.7
         with:
           # Full git history is needed to get a proper list
           # of changed files within `super-linter`
@@ -49,7 +49,7 @@ jobs:
       # Run Linter against code base #
       ################################
       - name: Lint Code Base
-        uses: github/super-linter/slim@v4
+        uses: super-linter/super-linter/slim@v7.0.0
         env:
           VALIDATE_ALL_CODEBASE: false
           LINTER_RULES_PATH: /
