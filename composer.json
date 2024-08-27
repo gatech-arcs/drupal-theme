@@ -1,6 +1,5 @@
 {
-    "name": "gtsciences/gtcos_theme",
-    "description": "The GT 3.x theme",
-    "type": "drupal-custom-theme",
-    "license": "GPL-2.0-or-later"
+    "name": "gtsciences/gt_theme",
+    "description": "The Georgia Tech 4.x / 2024 theme",
+    "type": "drupal-custom-theme"
 }

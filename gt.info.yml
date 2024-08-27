@@ -1,11 +1,12 @@
-# METADATA
-name: 'GT'
+name: 'Georgia Tech'
 type: theme
-description: 'GT Bootstrap 4 theme for Drupal 9.'
-core_version_requirement: ^9
+description: 'GT Bootstrap 5 theme for Drupal 10.'
+core_version_requirement: ^10 || ^11
 package: GT
-project: 'gt_drupal_theme'
-base theme: stable
+project: 'gt_theme'
+project status url: https://comm.gatech.edu/release_histories/gt_theme/4.x
+version: '4.0.14'
+base theme: false
 
 regions:
   alert: 'Alert'
