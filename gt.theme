@@ -41,7 +41,7 @@ function gt_preprocess_region(&$variables) {
   // Branding elements
   $variables['site_name'] = \Drupal::config('system.site')->get('name');
   $variables['site_slogan'] = \Drupal::config('system.site')->get('slogan');
-
+  /*
   if (function_exists('gt_tools_installed')) {
     // Main menu
     $block = \Drupal\block\Entity\Block::load($theme . '_main_menu');
@@ -54,6 +54,7 @@ function gt_preprocess_region(&$variables) {
   } else {
     \Drupal::messenger()->addError(t('You must <a href="@extend">install GT Tools</a> in order for the GT Theme to work properly.', array('@extend' => '/admin/modules')));
   }
+  */
 }
 
 /**

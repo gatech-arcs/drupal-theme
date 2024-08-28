@@ -1,6 +1,6 @@
 name: 'Georgia Tech'
 type: theme
-description: 'GT Bootstrap 5 theme for Drupal 10.'
+description: 'GT Bootstrap 5 theme for Drupal 10 and 11.'
 core_version_requirement: ^10 || ^11
 package: GT
 project: 'gt_theme'
