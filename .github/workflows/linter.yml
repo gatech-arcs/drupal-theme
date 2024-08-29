@@ -31,7 +31,7 @@
             VALIDATE_JSON: false
             VALIDATE_JSON_PRETTIER: false
             VALIDATE_PHP_PSALM: false
-            VALIDATE_PHPCS: false
+            VALIDATE_PHP_PHPCS: false
             # YAML is validated via eslint plugin for Drupal
             VALIDATE_YAML_PRETTIER: false
             GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
