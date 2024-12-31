@@ -16,7 +16,6 @@ use Drupal\taxonomy\Entity\Term;
 function gt_preprocess_page(&$variables) {
   $variables['cas_login'] = theme_get_setting('cas_login');
   $variables['super_footer'] = theme_get_setting('super_footer');
-  $variables['fontawesome_std'] = theme_get_setting('fontawesome_std');
   $variables['footer_01_size'] = (!theme_get_setting('footer_01_size') || theme_get_setting('footer_01_size') == 0) ? 3 : theme_get_setting('footer_01_size');
   $variables['footer_02_size'] = (!theme_get_setting('footer_02_size') || theme_get_setting('footer_02_size') == 0) ? 3 : theme_get_setting('footer_02_size');
   $variables['footer_03_size'] = (!theme_get_setting('footer_03_size') || theme_get_setting('footer_03_size') == 0) ? 3 : theme_get_setting('footer_03_size');
@@ -41,20 +40,6 @@ function gt_preprocess_region(&$variables) {
   // Branding elements
   $variables['site_name'] = \Drupal::config('system.site')->get('name');
   $variables['site_slogan'] = \Drupal::config('system.site')->get('slogan');
-  /*
-  if (function_exists('gt_tools_installed')) {
-    // Main menu
-    $block = \Drupal\block\Entity\Block::load($theme . '_main_menu');
-    if (isset($block)) {
-      $block_content = \Drupal::entityTypeManager()
-        ->getViewBuilder('block')
-        ->view($block);
-      $variables['main_navigation'] = $block_content;
-    }
-  } else {
-    \Drupal::messenger()->addError(t('You must <a href="@extend">install GT Tools</a> in order for the GT Theme to work properly.', array('@extend' => '/admin/modules')));
-  }
-  */
 }
 
 /**

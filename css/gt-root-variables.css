@@ -114,17 +114,9 @@
   --bs-link-color: #857437;
   /* Tech Gradient */
   --gt-gold-grad: linear-gradient(to right, #bfb37c 0%, #b3a369 100%);
--moz-linear-gradient(left, #bfb37c 0 %, #b3a369 100 %);
--webkit-linear-gradient(left, #bfb37c 0 %, #b3a369 100 %);
   --gt-gold-grad-rev: linear-gradient(to right, #b3a369 0%, #bfb37c 100%);
--moz-linear-gradient(left, #b3a369 0 %, #bfb37c 100 %);
--webkit-linear-gradient(left, #b3a369 0 %, #bfb37c 100 %);
   --gt-gold-drk-half: linear-gradient(to right, #ac9a58 0%, #ac9a58 50%, white 50%, white 100%);
--moz-linear-gradient(left, #ac9a58 0 %, #ac9a58 50 %, white 50 %, white 100 %);
--webkit-linear-gradient(left, #ac9a58 0 %, #ac9a58 50 %, white 50 %, white 100 %);
   --gt-gold-grad-shine: linear-gradient(60deg, #b3a369 0%, #bfb37c 40%, #bfb37c 60%, #b3a369 100%);
--moz-linear-gradient(60 deg, #b3a369 0 %, #bfb37c 40 %, #bfb37c 60 %, #b3a369 100 %);
--webkit-linear-gradient(60 deg, #b3a369 0 %, #bfb37c 40 %, #bfb37c 60 %, #b3a369 100 %);
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
   /* Body */
   --bs-body-font-family: "Roboto", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
