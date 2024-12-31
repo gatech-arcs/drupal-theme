@@ -199,7 +199,6 @@ function gt_form_node_page_layout_builder_form_alter(&$form, $form_state, $form_
 }
 
 function gt_page_attachments_alter(array &$page) {
-  if (is_null(theme_get_setting('fontawesome_std')) || theme_get_setting('fontawesome_std') == 1) {
-    $page['#attached']['library'][] = 'gt/fontawesome';
-  }
+  # Site license to FA Pro so can expect it always https://github.gatech.edu/ICWebTeam/gt_theme/issues/368
+  $page['#attached']['library'][] = 'gt/fontawesome';
 }
