@@ -133,7 +133,7 @@ body.frontpage #gt-page-title h1 {
 
 /*** Body fill page height ***/
 .gt-body-page{
-  min-height: 55vh;  
+  min-height: 55vh;
 }
 
 
@@ -449,7 +449,7 @@ a.btn.btn-secondary:visited:hover,
 }
 
 .breadcrumb-links li::after {
-  content: url("/themes/contrib/gt_theme/images/gt-gold-chevron.svg");
+  content: url("../images/gt-gold-chevron.svg");
   display: inline-block;
   vertical-align: middle;
   width: .5rem;

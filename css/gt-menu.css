@@ -161,7 +161,7 @@ nav ul .nav-link.active, ul .show>.nav-link
 nav .dropdown-toggle::after
 {
   content: ' ';
-  background-image: url("/themes/contrib/gt_theme/images/gt-gold-chevron.svg");
+  background-image: url("../images/gt-gold-chevron.svg");
   background-position: center bottom;
   background-repeat: no-repeat;
   background-size: contain;
@@ -178,7 +178,7 @@ nav .dropdown-toggle::after
 nav .dropdown-toggle.show::after
 {
   content: ' ';
-  background-image: url("/themes/contrib/gt_theme/images/gt-gold-chevron.svg");
+  background-image: url("../images/gt-gold-chevron.svg");
   background-size: contain;
   background-position: center bottom;
   background-repeat: no-repeat;
@@ -217,7 +217,7 @@ nav .dropdown-toggle.show::after
 .utility-navigation nav ul:not(.contextual-links) a::after
 {
   content: ' ';
-  background-image: url("/themes/contrib/gt_theme/images/gt-gold-chevron.svg");
+  background-image: url("../images/gt-gold-chevron.svg");
   background-size: contain;
   background-position: center bottom; background-repeat: no-repeat;
   display: inline-block;
