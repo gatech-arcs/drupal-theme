@@ -138,8 +138,8 @@ body.frontpage #gt-page-title h1 {
 
 
 /* Links */
-a,
-a:link {
+.main-container a,
+.main-container a:link {
   color: inherit;
   font-style: inherit;
   font-weight: 700;
@@ -147,14 +147,14 @@ a:link {
   transition: all 0.35s;
 }
 
-a:hover,
-a:focus,
-a:active {
+.main-container a:hover,
+.main-container a:focus,
+.main-container a:active {
   color: var(--gt-drk-gold);
   outline: none !important;
 }
 
-a:focus {
+.main-container a:focus {
   background: transparent;
 }
 
