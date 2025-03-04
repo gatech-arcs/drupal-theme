@@ -1,30 +1,49 @@
-gt.extra_small:
+gt.xs:
   label: 'Extra small'
-  mediaQuery: 'all and (min-width: 0px)'
+  mediaQuery: ''
   weight: 4
   multipliers:
     - 1x
-gt.small:
+    - 2x
+gt.sm:
   label: Small
-  mediaQuery: 'all and (min-width: 576px)'
+  mediaQuery: 'all and (min-width: 640px)'
   weight: 3
   multipliers:
     - 1x
-gt.medium:
+    - 2x
+gt.md:
   label: Medium
   mediaQuery: 'all and (min-width: 768px)'
   weight: 2
   multipliers:
     - 1x
-gt.large:
+    - 2x
+gt.lg:
   label: Large
-  mediaQuery: 'all and (min-width: 992px)'
+  mediaQuery: 'all and (min-width: 1024px)'
   weight: 1
   multipliers:
     - 1x
-gt.extra_large:
+    - 2x
+gt.xl:
   label: 'Extra large'
-  mediaQuery: 'all and (min-width: 1200px)'
+  mediaQuery: 'all and (min-width: 1280px)'
   weight: 0
   multipliers:
     - 1x
+    - 2x
+gt.2xl:
+  label: 'Extra extra large'
+  mediaQuery: 'all and (min-width: 1536px)'
+  weight: 0
+  multipliers:
+    - 1x
+    - 2x
+gt.3xl:
+  label: 'Extra extra large'
+  mediaQuery: 'all and (min-width: 1920px)'
+  weight: 0
+  multipliers:
+    - 1x
+    - 2x
