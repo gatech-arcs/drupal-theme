@@ -1,0 +1,40 @@
+dt, dd {
+  font-size: 0.9rem;
+}
+dt {
+  font-weight: bold;
+}
+
+@media screen and (min-width: 360px) {
+  dl.aligned {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  dl.aligned dt {
+    flex: 35% 1 1;
+    text-align: right;
+  }
+  dl.aligned dd {
+    display: flex;
+    margin: 0;
+    text-align: left;
+  }
+
+  dl.aligned dd + dd {
+    width: 100%;
+  }
+  dl.aligned dt + dd:not(:nth-child(2)),
+  dl.aligned dt:first-child + dd:nth-child(2) {
+    flex: 65% 1 1;
+  }
+  dl.aligned dd + dd::before {
+    width: 25%;
+    content: "";
+    padding-top: 0
+  }
+}
+
+details dt, details dd {
+  color: inherit;
+}

@@ -9,6 +9,7 @@ global-styling:
       css/gt-footer.css: {}
       css/gt-layout-builder.css: {}
       css/theme-settings.css: {}
+      css/gt-lists-variants.css: {}
 
   dependencies:
     - core/jquery
