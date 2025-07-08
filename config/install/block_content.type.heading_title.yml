@@ -1,0 +1,7 @@
+langcode: en
+status: true
+dependencies: {  }
+id: heading_title
+label: 'Heading Title'
+revision: 0
+description: 'Add a title heading.'
