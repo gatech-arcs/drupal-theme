@@ -9,7 +9,6 @@
  *  A keyed array containing the current state of the form.
  */
 
-use Drupal\gt_tools\Controller\UNLicenseController;
 use Drupal\Core\Link;
 use Drupal\Core\Url;
 
@@ -281,70 +280,4 @@ function gt_form_system_theme_settings_alter(&$form, &$form_state) {
   // Save on submit
   $form['actions']['submit']['#value'] = t('Save');
 
-/*--------- Setting UsableNet ------------ */
-  $usablenet_license = theme_get_setting('usablenet_license');
-  $usablenet_validated = FALSE;
-
-  if (is_null($usablenet_license)) {
-    if (!is_null($form_state->getValue('usablenet_license'))) {
-    if ($form_state->getValue('usablenet_license') == ''){
-      Drupal::messenger()->addError('Verification failed. UsableNet is not enabled. Please supply a valid license key.');
-    } else {
-      $host = \Drupal::request()->getHost();
-      $data = UNLicenseController::check_license_data($host, $form_state->getValue('usablenet_license'));
-      if ($data == FALSE){
-        Drupal::messenger()->addError('Verification failed. UsableNet is not enabled. Please supply a valid license key.');
-      } else if ($data == TRUE){
-        $usablenet_validated = TRUE;
-        Drupal::messenger()->addStatus('Verification succeeded. Please save your changes to enable UsableNet.');
-      } else {
-        Drupal::messenger()->addError('Verification failed. UsableNet is not enabled. Please supply a valid license key.');
-      }
-    }
-  }
-  }
-
-
-//adding UsableNet tab to the left-hand side tabs
-  $form['usablenet'] = array(
-    '#type' => 'details',
-    '#title' => t('UsableNet'),
-    '#description' => t('Configuration options for UsableNet assistive technology.'),
-    '#weight' => -992,
-    '#group' => 'options',
-    '#open' => TRUE,
-  );
-
-  $form['usablenet']['usablenetDomWrapper'] = array(
-    '#type' => 'container',
-    '#attributes' => array(
-      'id' => 'usablenet-callback-wrapper',
-    ),
-  );
-
-// Set up text field for license key
-  $form['usablenet']['usablenetDomWrapper']['usablenet_license'] = array(
-    '#type' => 'textfield',
-    '#title' => t('UsableNet License Key'),
-    '#attributes' => array('style' => array($usablenet_validated ? 'background: #ffb;' : '')),
-    '#default_value' => theme_get_setting('usablenet_license'),
-    '#description' => Link::fromTextAndUrl('Contact OIT for more information.', Url::fromUri('https://oit.gatech.edu/accessibility')),
-    '#disabled' => $usablenet_license ? TRUE : FALSE,
-  );
-
-//this is the button
-  $form['usablenet']['usablenetDomWrapper']['usablenet_verify'] = array(
-    '#type' => 'button',
-    '#value' => t('Verify UsableNet license key'),
-    '#ajax' => array(
-      'callback' => 'usablenetCallback',
-      'wrapper'=>'usablenet-callback-wrapper',
-    ),
-    '#disabled' => $usablenet_license ? TRUE : FALSE,
-  );
-
 }
-
-function usablenetCallback($form, $form_state){
-  return $form['usablenet']['usablenetDomWrapper'];
-};

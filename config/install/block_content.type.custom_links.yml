@@ -1,7 +1,0 @@
-langcode: en
-status: true
-dependencies: {  }
-id: custom_links
-label: 'Custom Links'
-revision: 1
-description: 'Add buttons with multiple styles'

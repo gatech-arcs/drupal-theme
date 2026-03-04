@@ -48,8 +48,6 @@ function gt_preprocess_region(&$variables) {
  * Allow CSS/Footer Customization and add path alias to body class.
  */
 function gt_preprocess_html(&$variables) {
-  /* Usablenet theme setting */
-  $variables['usablenet_license'] = theme_get_setting('usablenet_license') ? TRUE : FALSE;
 
   /* Add body class to nodes */
   $current_path = \Drupal::service('path.current')->getPath();

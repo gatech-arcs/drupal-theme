@@ -1,7 +1,0 @@
-langcode: en
-status: true
-dependencies: {  }
-id: image_with_copy
-label: 'Image with copy'
-revision: 1
-description: 'Add an image with copy and link.'

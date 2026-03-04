@@ -133,13 +133,13 @@ body.frontpage #gt-page-title h1 {
 
 /*** Body fill page height ***/
 .gt-body-page{
-  min-height: 55vh;
+  min-height: 55vh;  
 }
 
 
 /* Links */
-.main-container a,
-.main-container a:link {
+a,
+a:link {
   color: inherit;
   font-style: inherit;
   font-weight: 700;
@@ -147,14 +147,14 @@ body.frontpage #gt-page-title h1 {
   transition: all 0.35s;
 }
 
-.main-container a:hover,
-.main-container a:focus,
-.main-container a:active {
+a:hover,
+a:focus,
+a:active {
   color: var(--gt-drk-gold);
   outline: none !important;
 }
 
-.main-container a:focus {
+a:focus {
   background: transparent;
 }
 
@@ -882,4 +882,12 @@ blockquote p::after {
     float: none;
     padding: 0;
   }
+}
+
+@media screen and (max-width: 991px) {
+    
+#gt-logo img {
+height: auto !important;
+}
+
 }

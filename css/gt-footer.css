@@ -99,21 +99,27 @@
 #gt-contact-information span
 {
     display: block;
-    margin: .5rem 0 .25rem;
 }
 
 a.gt-phone::before
 {
     content: "\f095";
     font-family: 'FontAwesome';
-    margin: 0 .5rem 0 0;
+    margin: 0 0.5rem 0 0;
 }
 
 a.gt-campus-map::before
 {
     content: "\f041";
     font-family: 'FontAwesome';
-    margin: 0 .75rem 0 0;
+    margin: 0 0.5rem 0 0;
+}
+
+a.gt-campus-map, a.gt-phone
+{
+    padding: 0.5rem 0 0 0;
+    line-height: 1rem;
+    margin-top: 0rem !important;
 }
 
 /* End Footer */

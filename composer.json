@@ -1,6 +1,12 @@
 {
     "name": "gtsciences/gt_theme",
-    "description": "The Georgia Tech 4.x / 2024 theme",
+    "description": "The Georgia Tech 5.x / 2025 theme",
     "type": "drupal-custom-theme",
-    "license": "GPL-2.0-or-later"
+    "license": "GPL-2.0-or-later",
+
+    "require": {
+        "php": "^8.3",
+        "drupal/core": "^10.3|^11",
+        "drupal/asset_injector": "^2.2"
+    }
 }
