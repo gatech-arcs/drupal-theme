@@ -1,5 +1,5 @@
 {#
-   GT People Full Person Template
+    GT People Full Person Template
 /**
  * @file
  *
@@ -84,14 +84,14 @@
         {% endif %}
       </dd>
     {% endif %}
-	
+
     {% if content.field_gtppl_pronouns|render is not empty %}
       <dt class="-pronouns">Pronouns</dt>
       <dd class="-pronouns">
         {{ content.field_gtppl_pronouns.0 }}
       </dd>
     {% endif %}
-	
+
 
     {% if content.field_gtppl_url_gscholar|render is not empty or content.field_gtppl_url_orcid|render is not empty or content.field_gtppl_url_publons|render is not empty or content.field_gtppl_url_pubmed|render is not empty or content.field_gtppl_url_researcherid|render is not empty or content.field_gtppl_url_researchgate|render is not empty or content.field_gtppl_url_scopus|render is not empty %}
       <dt class="-publinks">Publication Links</dt>
@@ -150,7 +150,7 @@
         {{ content.field_gtppl_image|image_style('max_width_480') }}
       {% elseif content.field_gtppl_image_local|render is not empty %}
         <img src="{{ content.field_gtppl_image_local.0 }}">
-       {% elseif content.field_gtppl_image_url|render is not empty %}
+      {% elseif content.field_gtppl_image_url|render is not empty %}
 
       {% if content.field_gtppl_image|file_uri is not null %}
         <img src="{{ content.field_gtppl_image|file_uri|image_style('max_width_480') }}" alt="{{ content.field_gtppl_image.entity.field_media_image.alt }}">
@@ -166,7 +166,7 @@
         <img src="" alt="">
       {% endif %}
     </div>
-  
+
   <div class="gtppl-profile-body">
     <div class="gtppl-header-txt">
       <h1>
@@ -196,7 +196,7 @@
     <h3>Awards</h3>
     {{ content.field_gtppl_awards.0 }}
 {% endif %}
-  
+
   {% if content.field_gtppl_education|render is not empty %}
     <h3>Education</h3>
       {{ content.field_gtppl_education.0 }}
@@ -205,20 +205,20 @@
   {% if content.field_gtppl_research_history|render is not empty %}
     <h3>Research</h3>
       {{ content.field_gtppl_research_history.0 }}
-	  
-	  {% if content.field_gtppl_research_keywords|render is not empty %}
+
+        {% if content.field_gtppl_research_keywords|render is not empty %}
         <h5>Research Keywords</h5>
         {{ content.field_gtppl_research_keywords.0 }}
       {% endif %}
   {% endif %}
 
   {% if content.field_gtppl_publications|render is not empty %}
- 	<div class="gtppl-publications">
+        <div class="gtppl-publications">
       <h3>Select Publications</h3>
       {{ content.field_gtppl_publications.0 }}
-	</div>
+        </div>
   {% endif %}
-  
+
   </div> <!-- /gtppl-profile-body -->
 </div>
 
