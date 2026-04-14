@@ -70,6 +70,15 @@ input[type="text"] {
   margin-bottom: 0;
 }
 
+/* fix layout issues caused by type filter removal */
+.view-gt-people-listings-new .views-exposed-form .form--inline {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  align-items: end;
+}
+/******/
+
 .form-type-textfield label {
   display: block;
   width: 100%;
