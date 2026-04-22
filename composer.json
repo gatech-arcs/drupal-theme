@@ -3,7 +3,10 @@
     "description": "The Georgia Tech 5.x / 2025 theme",
     "type": "drupal-custom-theme",
     "license": "GPL-2.0-or-later",
-
+    "version": "2.x-dev",
+    "replace": {
+        "gt/gt_theme": "5.0.4"
+    },
     "require": {
         "php": "^8.3",
         "drupal/core": "^10.3|^11",
