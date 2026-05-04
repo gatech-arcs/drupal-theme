@@ -1,5 +1,7 @@
 # GT Theme
 
+NOTE: This 3.X branch is specifically used on Chemistry only.
+
 This is the [official Georgia Tech theme](https://theme.gatech.edu) for the Drupal content management system. Version 4.x is compatible with Drupal 9 and above.
 
 ## Bootstrap 5
