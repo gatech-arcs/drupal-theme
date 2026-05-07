@@ -1,6 +1,11 @@
 # GT Theme
 
-This is the [official Georgia Tech theme](https://theme.gatech.edu) for the Drupal content management system. Version 4.x is compatible with Drupal 9 and above.
+This is the [official Georgia Tech theme](https://theme.gatech.edu) for the Drupal content management system.
+
+## Font Preloading now available
+
+This should be adopted for performance in 11.4+
+[Library definitions now support a fonts key for preloading](https://www.drupal.org/node/3585574)
 
 ## Bootstrap 5
 
